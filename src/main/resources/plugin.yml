@@ -1,0 +1,8 @@
+name: LiteBuyer
+version: '${version}'
+main: me.swift.litebuyer.LiteBuyer
+api-version: '1.16'
+commands:
+  buyer:
+    aliases:
+      - b

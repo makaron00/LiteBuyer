@@ -1,0 +1,89 @@
+# dev by makaron00
+
+main:
+  buttons:
+    info:
+      slot: 45
+      material: WRITABLE_BOOK
+      displayName: " "
+      lore:
+        - "§x§F§B§6§5§0§8• §fТекущий множитель §x§F§B§C§D§0§8x{multiplier} (10)"
+        - ""
+        - " §x§F§B§6§5§0§8§l§n▍§r"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fВ этом меню Вы можете обменивать"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fпредметы на монеты. Более ценные"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fресурсы стоят больше Монет"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fи быстрее повышают §x§4§4§9§8§D§Bобщий коэффициент,"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fчем предметы, которые легко добыть."
+        - " §x§F§B§6§5§0§8§l§n▍§r §fНекоторые ресурсы обменять на"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fМонеты невозможно"
+        - " §x§F§B§6§5§0§8§l§n▍§r"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fВ основном можно сдавать след. предметы:"
+        - " §x§F§B§6§5§0§8§l§n▍§r §x§4§4§9§8§D§Bлут с мобов, ценные ресурсы с шахты,"
+        - " §x§F§B§6§5§0§8§l§n▍§r §x§4§4§9§8§D§Bрастения и древесину. &fЧем больше"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fценнее предметов вы сдаете, тем выше"
+        - " §x§F§B§6§5§0§8§l§n▍§r §fстановится ваш множитель монет"
+        - " §x§F§B§6§5§0§8§l▍§r"
+
+
+ulta:
+  button:
+    info:
+      name: " "
+      lore:
+        - "§x§F§B§E§6§0§8§l§n ▍§r"
+        - "§x§F§B§E§6§0§8§l§n ▍§r §fПолучайте очки Скупщика,"
+        - "§x§F§B§E§6§0§8§l§n ▍§r §fсдавая предметы и активируйте Ульту"
+        - "§x§F§B§E§6§0§8§l§n ▍§r §fдля повышения цен скупщика!"
+        - "§x§F§B§E§6§0§8§l§n ▍§r §f"
+        - "§x§F§B§E§6§0§8§l§n ▍§r §fПрогрес: §x§F§B§E§6§0§8{amount}/25000"
+        - "§x§F§B§E§6§0§8§l§n ▍§r §fПрибавка: §x§F§B§E§6§0§8x{multiplier}"
+        - "§x§F§B§E§6§0§8§l§n ▍§r §fДлительность"
+        - "§x§F§B§E§6§0§8§l ▍§r"
+
+
+gui:
+  button:
+    info:
+      name: "§f"
+      lore:
+        - "§x§F§B§6§5§0§8▶ §fНажмите, чтобы сдать все предметы"
+        - "§f  и получить §x§F§B§C§D§0§8{price}"
+  panel:
+    slot:
+      - 46
+      - 47
+      - 48
+      - 50
+      - 51
+      - 52
+    material: BLACK_STAINED_GLASS_PANE
+    displayName: " "
+
+messages:
+  sall: "§x§F§B§6§5§0§8▶ §fВы §x§F§B§6§5§0§8успешно продали предметы (+3 поинтов к множителю) §fпредметов и заработали §x§F§B§C§D§0§8{money} монет. §fВаш множитель теперь составляет: §x§F§B§C§D§0§8{multiplier}"
+
+sounds:
+  yes: "ENTITY_VILLAGER_YES"
+  no: "ENTITY_VILLAGER_NO"
+
+# Не ставить больше 0.03
+buyer:
+  PAPER:
+    price: 100
+    addMultiplier: 0.03
+  DIAMOND:
+    price: 40
+    addMultiplier: 0.03
+  GOLD_INGOT:
+    price: 85
+    addMultiplier: 0.03
+  NETHERITE_INGOT:
+    price: 530
+    addMultiplier: 0.03
+  ENDER_PEARL:
+    price: 20
+    addMultiplier: 0.03
+
+settings:
+  maxMultiplier: 10.0
